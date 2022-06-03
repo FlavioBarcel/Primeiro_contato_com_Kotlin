@@ -43,13 +43,13 @@ Declaração de variável
 *  Const Val ( valor imutável, Snake_Case) -  constante cujo valor é atribuido durante a compilação 
 obs: dentro da função main se usa o Val e fora se usa o Const val
 
-Ex.:1º exemplo  var currentAge = 22	   val currentAge = 22	        const val MIN_AGE = 16
-        
-       2º exemplo var currentAge:Int?	   val currentAge:Int?		       const val MAX_AGE = 68
-            currentAge = null ou 22	                currentAge = null ou 22	
-               (Exemplo de VAR)                           (Exemplo de VAL)                             (Exemplo de Const val)
-          valor definido e alterado                valor definido durante a                             valor definido durante   
-              durante a execução                               execução                                                a compilação
+Ex.:1º exemplo  var currentAge = 22	       val currentAge = 22	              const val MIN_AGE = 16
+          
+       2º exemplo var currentAge:Int?	     val currentAge:Int?		             const val MAX_AGE = 68
+            currentAge = null ou 22	     currentAge = null ou 22	
+               (Exemplo de VAR)             (Exemplo de VAL)                  (Exemplo de Const val)
+          valor definido e alterado      valor definido durante a             valor definido durante   
+              durante a execução                execução                           a compilação
 
 
 Possiveis erros
@@ -70,24 +70,24 @@ var tete:Int = null //ERRO
 Operadores Aritméticos
 ------------------------------------------
 
-Função	  	 Expressão                comando                 Atribuição
-----------	         |	-----------------      |        --------------	       |      ----------------
-soma	         |	    a  + b	         |	a.plus(b)	       |	a+=b
-subtração          |            a  -  b	         |	a.minus(b)       |	a-=b
-multiplicação    |            a  *  b	         |	a.times(b)	       |	a*=b
-divisão              |            a   /  b	         |	a.div(b)	       |	a/=b
-resto                  |            a % b	         |	a.mod(b)	       |	a%=b
+Função	  	          Expressão              comando             Atribuição
+----------	   | 	-----------------  |   --------------	 |   ----------------
+soma	         |	      a  + b	       |	     a.plus(b)	   |	     a += b
+subtração     |       a  -  b	      |	     a.minus(b)   |	     a -= b
+multiplicação |       a  *  b	      |	     a.times(b)	  |	     a *= b
+divisão       |       a  /  b	      |	     a.div(b)	    |	     a /= b
+resto         |       a  %  b	      |   	  a.mod(b)	    |  	   a %= b
 
 
 Operadores Comparativos
 -----------------------------------------
 
-Função	  	             Expressão                      comando    
-----------	        	  |         -----------------            |        --------------	       
-maior/menor    	  |          a>b ou a<b	         |	a.compareTo(b) >0 ou a.compareTo (b) <0	      
-maior/menor igual       |        a>=b ou a<=b	         |	a.compareTo(b) >=0 ou a.compareTo (b) =<0      
-igual  		  |              a == b	         |	a.equals(b)	       
-diferente             	  |               a != b	         |	!(a.equals(b))	      
+Função	  	               Expressão                          Comando    
+----------	       |  -----------------  |   ------------------------------------------	       
+maior/menor    	  |     a>b ou a<b	     |	   a.compareTo(b) >0 ou a.compareTo (b) <0	      
+maior/menor igual |    a>=b ou a<=b	    |	   a.compareTo(b) >=0 ou a.compareTo (b) =<0      
+igual  		         |       a == b	       |	   a.equals(b)	       
+diferente         |       a != b	       |   	!(a.equals(b))	      
 
 obs: Os comandos compareTo retornam os valores -1(menos que), 0(igual) ou 1(maior).Ja os operadores retornam valores booleano
          O comando equals retorna um boleano
