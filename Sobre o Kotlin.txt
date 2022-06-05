@@ -105,3 +105,10 @@ var premiado=listOf(1,4,7,10)   - exemplo de list com o comando listOf
     if (bingo in premiado)      - exemplo de contem
          println("Voce foi sorteado")
     else println ("Voce nao foi sorteado")
+    
+Manipulação de Strings
+-------------------------------------------
+Métodos associados:
+- indexação, concatenação, comparação, formação
+- concatenada com plus ou +
+- tambem é tratada como um array de char
