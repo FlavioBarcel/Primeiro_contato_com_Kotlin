@@ -112,3 +112,10 @@ Métodos associados:
 - indexação, concatenação, comparação, formação
 - concatenada com plus ou +
 - tambem é tratada como um array de char
+
+a)Indexação                 Exemplo:   
+- First()                   var s = "Olá, mundo1!"
+- last()                    println(s[2])            resultado= á
+- String.length             println(s.first())       resultado= á
+- String[index]             println(s[s.length-1])   resultado= !
+                            println(s.last())        resultado= !
