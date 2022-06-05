@@ -91,3 +91,17 @@ diferente         |       a != b	       |   	!(a.equals(b))
 
 obs: Os comandos compareTo retornam os valores -1(menos que), 0(igual) ou 1(maior).Ja os operadores retornam valores booleano
          O comando equals retorna um boleano
+         
+Operadores in e ranger
+------------------------------------------
+in        - contem      - se o valor esta presente em uma lista ou uma faixa(ranger) de valores
+!in       - nao contem  - se o valor não esta presente em uma lista ou uma faixa(ranger) de valores
+int..int  - ranger      - cria um intervalo de valores que inicia no primeiro parametro e acaba no segundo
+Exemplos:
+var premiado=listOf(1,4,7,10)   - exemplo de list com o comando listOf
+    var bingo=(1..10).random()  - exemplo de ranger com o comando .random() que sorteia um numero de 1 a 10
+    println(bingo)
+    
+    if (bingo in premiado)      - exemplo de contem
+         println("Voce foi sorteado")
+    else println ("Voce nao foi sorteado")
