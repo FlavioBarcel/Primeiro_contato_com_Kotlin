@@ -119,3 +119,123 @@ a)Indexação                 Exemplo:
 - String.length             println(s.first())       resultado= á
 - String[index]             println(s[s.length-1])   resultado= !
                             println(s.last())        resultado= !
+b) Concatenação
+- Para concatenar duas strings o plus/+ pode ser usado
+- Para concatenar uma variável a uma string, os símbolos ${} devem ser inseridos
+Exemplo:
+var name = "Ana"
+var s = "Olá"
+println(s + name)               - OláAna
+println("$s, $name!")           - Olá, Ana!
+println("Bem vinda(o), $name!") - Bem vinda(o), Ana!
+
+Outro Exemplo:
+var welcome = "Bem vinda(o)"
+var name = "luiza"
+println("$welcome, ${name.capitalize()}!") - Bem vinda(o), Luiza!
+Obs: $welcome             - sem as chaves so puxa a variavel
+     ${name.capitalize()} - com a chaves eu posso chamar um metodo que deixa a letra maiusculo. Essa "capitalize" faz a letra ficar maiuscula 
+     
+c) Formatação
+NOME                         | FUNÇÃO                                                          | MÉTODOS
+Capitalização de strings     | Alterar a formatação entre letras minusculas e maiusculas       | capitalize(), toUpperCase(), toLowerCase(), and decapitalize()
+remoção de espaços           | Remove espaços vazios e caracteres inadequados para impressão   | trimEnd(), trimStrant(),  trim()  
+Subistituição de caracteres  | Subistituir caracteres por outros                               | replace(x,y)
+Formatação                   | Formatar outros valores para o padrão de string                 | "padrão ${valor}".format(valor)
+
+EMPTY X BLANK
+------------------------------------------
+- Métodos de comparação
+- Empty se string esta vazia ou blank se a string esta em branco
+- string vazia é cujo o tamanho é zero
+- Se o tamanho da string(s.length) for 0 está empty e blank
+- Se o tamanho for > 0 mas todos os caracteres sao espaços em branco está Blank mas não empty
+
+Exemplo: String vazia
+
+var nome = ""                                         - esta vazio e esta branco
+println(nome.isEmpty())                               - true
+println(nome.isBlank())                               - true
+println(nome.isNullOrBlank() || nome.isNullOrblank()  - true
+
+Exemplo: string em branco
+
+var nome = "      "       - não esta vazio e ta branco
+println(nome.isEmpty())   - false
+println(nome.isBlank())   - true
+
+FUNÇÕES
+-----------------------------------------
+- Prefixo Fun nomeDaFunção(nome:Tipo):TipoRetorno{}
+- Funções anônimas, single-line, inline, extensões, Lambdas, ordem superior;
+
+Simplificando uma função pra ter o mesmo resultado
+
+| private fun getFullNAME(name:Sring, LastName:String):String {           - versao grande
+|  val fullNAME = "$name $lastName"
+|  
+| private fun getFullname(name:String, lastName:String)String{            - versao menor 
+|  return "$name $lastName"
+|
+|
+| private fun getFullname(name:String, lastName:String) = $name $lastName - versao mais simplificada 
+
+a) Funções sem retorno
+fun somar (n1:Int, n2:INt){   - Dentro do parenteses eu coloco ja a minha variavel e o tipo que ela é
+  println(n1+n2)
+{
+
+Fun main (){
+   somar(10,5)                - aqui eu chamo minha função criada
+{   
+
+b) Funções com retorno
+fun somar (n1:Int, n2:Int):Int{
+  var total = n1 + n2
+  return total
+{
+fun main(){
+  var resultado = somar(10,5)
+  println(resultado)
+{
+
+
+c) Funções ordem superior
+- Recebem outra função ou lambda por parametro
+- bastante uteis para a generalização de funções e tratamento de genero
+
+d) Funções de Single-line
+- Prefixo Fun nomeDaFuncao(nome:Tipo) = retorno;
+- Função de uma única linha;
+- Infere o tipo de retorno;
+
+exemplo:
+private fun getFullname(name:String, lastName:String) = "$name $lastName"
+
+e) Funções /extensões
+- Prefixo Fun Tipo.nomeDaFuncao();
+- Cria uma fnção que só pode ser chamada por um tipo especifico, cujo o calor pode ser referenciado dentro da função através da palavra this;
+
+exemplo:
+fun String.randomCapitalizedLetter() = this[(0..this.length-1).random()].toUpperCase()
+
+ESTRUTURAS DE CONTROLE
+---------------------------------------------
+- if/else, when, elvis operator;
+- Pode ser utilizado tanto para controle quanto para atribuição
+- Pode ser encadeado com múltiplas estruturas;
+
+if (espressão){           | when {         | val a:Int? = null    -    o elves operator é especificamente pra vê se algum valor é nulo ou não e    
+  //bloco de codigo       |   case  -> {}  | var number = a?: 0       oferecer uma alternativa pra esse valor 
+}  else if (expressão2){  |   case2 -> {}  | 
+  //bloco de codigo       |   case3 -> {}
+}  else {                 |   else  -> {}
+  //bloco de codigo
+}
+
+ATRIBUIÇÃO
+--------------------------------------
+- O valor atribuido tem que estar na ultima linha do bloco
+- A condicional pode não usar chaves se so fizer a atribuição
+
+
