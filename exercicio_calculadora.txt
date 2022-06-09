@@ -1,0 +1,31 @@
+fun main(){
+  var opcao=1
+  var numero1=0
+  var numero2=2
+      
+  println("++++++++++++++++++++++++++++++")
+  println("    ESCOLHA UMA OPERAÇÃO")
+  println(" - Opção 1 - Soma")
+  println(" - Opção 2 - Subtração")
+  println(" - Opção 3 - Divisão")
+  println(" - Opção 1 - Multiplicação")
+  println(" - Opção 4 - Resto")
+  println("++++++++++++++++++++++++++++++")
+  
+  if (numero1==0 || numero2==0){
+      println("Você digitou um numero nulo")
+      println("Favor digitar um numero que nao seja nulo")
+  } else {
+  
+  when (opcao){
+  1-> println(" O valor da soma é: ${numero1+numero2}")
+  2-> println(" O valor da soma é: ${numero1-numero2}")
+  3-> println(" O valor da soma é: ${numero1/numero2}")
+  4-> println(" O valor da soma é: ${numero1*numero2}")
+  5-> println(" O valor da soma é: ${numero1%numero2}")
+  else -> { println("Opção invalida !")
+            println("Favor escolher a opção correta")
+  }  
+  }
+  }
+}
